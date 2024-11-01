@@ -88,6 +88,18 @@ button:hover,
   filter: brightness(90%);
 }
 
+
+@media (prefers-color-scheme: dark) {
+  .button.button-default {
+    color: #2e2727;
+    background-color: #efedee;
+  }
+  .button.button-default:hover,
+  .button.button-default:focus {
+    filter: brightness(90%);
+  }
+}
+
 /* Amazon */
 .button.button-amazon {
   color: #000000;

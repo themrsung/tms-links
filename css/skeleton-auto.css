@@ -87,7 +87,23 @@ are based on 10px sizing. So basically 1.5rem = 15px :) */
 
 html {
   font-size: 100%;
-  color-scheme: light dark;
+  /* color-scheme: light dark; */
+
+  background-color: #efedee;
+  color: #2e2727;
+}
+/* 
+h1, h2, h3, h4, h5, h6, p {
+  color: #2e2727;
+} */
+
+@media (prefers-color-scheme: dark) {
+  
+html {
+  background-color: #2e2727;
+  color: #efedee;
+}
+
 }
 
 body {
@@ -125,26 +141,28 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #2457F5;
+  color: #ff2e01;
 }
 a:hover {
-  color: #083BDA; 
+  color: #ff2e01;
+  filter: brightness(0.9);
 }
 a:focus {
-  outline: #7AB8FF solid 2px;
+  outline: #ff2e01 solid 2px;
   border-radius: 2px;
 }         
 
 /* Link Color Dark Theme */
 @media (prefers-color-scheme: dark) {
   a {
-    color: #4899F7;
+    color: #ff2e01;
 }
 a:hover {
-  color: #7AB8FF;
+  color: #ff2e01;
+  filter: brightness(0.9);
 }
 a:focus {
-  outline: #7AB8FF solid 2px;
+  outline: #ff2e01 solid 2px;
   border-radius: 2px;
 }
 }
